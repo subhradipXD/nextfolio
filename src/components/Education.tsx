@@ -1,5 +1,5 @@
 import { FadeCard } from "@/components/ui/fade-card";
-import FlipText from '@/components/ui/flip-text';
+import BlurIn from "./ui/blur-in";
 
 const educationData = [
     {
@@ -58,25 +58,25 @@ const educationData = [
 
 export function Education() {
     return (
-        <div className="flex flex-col space-y-8 text-center">
-            <FlipText
-                className="text-xl font-bold -tracking-widest text-black dark:text-white md:text-4xl md:leading-[5rem]"
-                word="MY EDUCATION"
+        <div className="flex flex-col space-y-8 text-center px-4 md:px-0">
+            <BlurIn
+                word="Education"
+                className="text-xl text-black dark:text-white"
             />
             <div className="flex justify-center">
-                <div className="w-1/2 mx-auto">
+                <div className="w-full max-w-2xl"> {/* Max width for larger screens */}
                     {educationData.map((item, index) => (
                         <FadeCard
                             key={index}
                             className={`
-                                p-3 mb-3 bg-transparent border rounded-xl 
+                                p-4 mb-3 bg-transparent border rounded-xl 
                                 text-black dark:text-white 
                                 shadow-lg transition-transform 
                                 transform hover:scale-105 
                                 hover:shadow-[0_0_15px_5px_rgba(255,200,0,0.5)] 
                                 dark:hover:shadow-[0_0_15px_5px_rgba(0,255,200,0.5)]
                             `}
-                            direction={index % 2 === 0 ? "up" : "right"} // Alternate directions
+                            direction={index % 2 === 0 ? "left" : "right"} // Alternate directions
                             framerProps={{
                                 show: { transition: { delay: index * 0.2 } },
                             }}
@@ -90,5 +90,3 @@ export function Education() {
         </div>
     );
 }
-
-

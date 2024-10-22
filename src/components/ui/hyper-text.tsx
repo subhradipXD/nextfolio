@@ -13,7 +13,7 @@ interface HyperTextProps {
   animateOnLoad?: boolean;
 }
 
-const alphabets = "A@C#E$G%I&K*M)O(Q+S=U!W}Y{".split("");
+const alphabets = "A@C#E$7%I&K*81O(Q+S=V!W3Y{".split("");
 
 const getRandomInt = (max: number) => Math.floor(Math.random() * max);
 

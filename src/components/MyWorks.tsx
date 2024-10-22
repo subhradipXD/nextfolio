@@ -1,23 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import GradualSpacing from "./ui/gradual-spacing";
 import img from "@/public/1708594263137.jpg"; // Replace with actual image imports
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import BlurIn from "./ui/blur-in";
 
 export function MyWorks() {
     return (
         <>
-            <GradualSpacing
-                className="font-display text-center text-2xl font-bold -tracking-widest text-black dark:text-white md:text-4xl md:leading-[5rem]"
-                text="MY WORKS"
+            <BlurIn
+                word="Projects"
+                className="text-xl text-black dark:text-white"
             />
             <div className="flex flex-wrap justify-center -mt-10">
-                <div className=" mx-10">
+                <div className="mx-5 -mb-20 w-full sm:w-[30rem]"> {/* Responsive width for smaller screens */}
                     <CardContainer className="inter-var">
-                        <CardBody className="bg-transparent relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                        <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -61,9 +61,10 @@ export function MyWorks() {
                         </CardBody>
                     </CardContainer>
                 </div>
-                <div>
+
+                <div className="mx-5 -mb-20 w-full sm:w-[30rem]">
                     <CardContainer className="inter-var">
-                        <CardBody className="bg-transparent relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                        <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -107,9 +108,10 @@ export function MyWorks() {
                         </CardBody>
                     </CardContainer>
                 </div>
-                <div className="mx-10">
+
+                <div className="mx-5 -mb-20 w-full sm:w-[30rem]">
                     <CardContainer className="inter-var">
-                        <CardBody className="bg-transparent relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                        <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -153,9 +155,10 @@ export function MyWorks() {
                         </CardBody>
                     </CardContainer>
                 </div>
-                <div>
+
+                <div className="mx-5 -mb-20 w-full sm:w-[30rem]">
                     <CardContainer className="inter-var">
-                        <CardBody className="bg-transparent relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                        <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -200,7 +203,6 @@ export function MyWorks() {
                     </CardContainer>
                 </div>
             </div>
-
 
             <div className="flex justify-center">
                 <Link className="text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer" href={""}>
@@ -208,6 +210,5 @@ export function MyWorks() {
                 </Link>
             </div>
         </>
-
     );
 }

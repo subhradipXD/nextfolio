@@ -21,7 +21,7 @@ export function FadeCard({
   children,
 }: FadeCardProps) {
   const directionOffset = useMemo(() => {
-    const map = { up: 10, down: -10, left: -10, right: 10 };
+    const map = { up: 40, down: -40, left: -40, right: 40 };
     return map[direction];
   }, [direction]);
 

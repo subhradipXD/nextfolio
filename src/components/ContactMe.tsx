@@ -8,7 +8,6 @@ import Footer from "./Footer";
 import BlurIn from "./ui/blur-in";
 
 export function ContactMe() {
-
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form submitted");
@@ -17,12 +16,12 @@ export function ContactMe() {
     return (
         <>
             <BlurIn
-                word="CONTACT ME"
-                className="text-xl font-bold text-black dark:text-white"
+                word="Contact"
+                className="text-xl text-black dark:text-white"
             />
-            <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-2 md:p-8 shadow-input border bg-white bg-opacity-5 dark:bg-black dark:bg-opacity-5 backdrop-blur-md border-white dark:border-zinc-800 border-opacity-30">
+            <div className="max-w-md w-9/12 md:w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border bg-white bg-opacity-5 dark:bg-black dark:bg-opacity-5 backdrop-blur-md border-white dark:border-zinc-800 border-opacity-30">
                 <form className="my-5" onSubmit={handleSubmit}>
-                    <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+                    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-4">
                         <LabelInputContainer>
                             <Label htmlFor="firstname">First name</Label>
                             <Input id="firstname" placeholder="Tyler" type="text" />

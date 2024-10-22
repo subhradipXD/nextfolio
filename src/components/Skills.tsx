@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
-import WordPullUp from "./ui/word-pull-up";
-import { IconCloudDemo } from "./IconCloudDemo";
 import java from "@/public/icons/java-svgrepo-com.svg";
 import mysql from "@/public/icons/mysql-logo-svgrepo-com.svg";
 import html from "@/public/icons/html-5-svgrepo-com.svg";
@@ -18,6 +16,7 @@ import spring from "@/public/icons/spring-icon-svgrepo-com.svg";
 import tailwind from "@/public/icons/tailwindcss-icon-svgrepo-com.svg";
 import mongo from "@/public/icons/mongo-svgrepo-com.svg";
 import fire from "@/public/icons/firebase-svgrepo-com.svg";
+import BlurIn from "./ui/blur-in";
 const skills = [
     {
         id: 1,
@@ -133,24 +132,19 @@ const skills3 = [
 export function Skills() {
     return (
         <>
-            <WordPullUp
-                className="text-2xl font-bold tracking-[-0.02em] text-black dark:text-white md:text-4xl md:leading-[5rem]"
-                words="MY ACQUIRED SKILLS"
+            <BlurIn
+                word="Skills"
+                className="text-xl font-bold text-black dark:text-white"
             />
-            <div className="flex flex-col lg:flex-row h-screen items-center justify-center ">
-                <div className="w-full ">
-                    <IconCloudDemo />
+            <div className="w-full p-10 lg:mr-20">
+                <div className="flex flex-row items-center justify-center mb-5 w-full">
+                    <AnimatedTooltip items={skills} />
                 </div>
-                <div className="w-full p-10 lg:mr-20">
-                    <div className="flex flex-row items-center justify-center mb-5 w-full">
-                        <AnimatedTooltip items={skills} />
-                    </div>
-                    <div className="flex flex-row items-center justify-center mb-10 w-full">
-                        <AnimatedTooltip items={skills2} />
-                    </div>
-                    <div className="flex flex-row items-center justify-center mb-10 w-full">
-                        <AnimatedTooltip items={skills3} />
-                    </div>
+                <div className="flex flex-row items-center justify-center mb-10 w-full">
+                    <AnimatedTooltip items={skills2} />
+                </div>
+                <div className="flex flex-row items-center justify-center mb-10 w-full">
+                    <AnimatedTooltip items={skills3} />
                 </div>
             </div>
         </>
