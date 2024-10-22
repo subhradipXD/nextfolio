@@ -10,23 +10,23 @@ import { MyWorks } from "./MyWorks";
 
 export function TracingBeamDemo() {
     return (
-        <TracingBeam >
-            <section id="home">
+        <TracingBeam>
+            <section id="home" className="ml-2 md:ml-0">
                 <MainHome />
             </section>
-            <section id="about">
+            <section id="about" className="ml-2 md:ml-0">
                 <AboutMe />
             </section>
-            <section id="works">
+            <section id="works" className="ml-2 md:ml-0">
                 <MyWorks />
             </section>
-            <section id="education">
+            <section id="education" className="ml-2 md:ml-0">
                 <Education />
             </section>
-            <section id="skills">
+            <section id="skills" className="ml-2 md:ml-0">
                 <Skills />
             </section>
-            <section id="contact">
+            <section id="contact" className="ml-2 md:ml-0">
                 <ContactMe />
             </section>
         </TracingBeam>

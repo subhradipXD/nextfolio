@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 export default function RetroGrid({
   className,
-  angle = 35,
+  angle = 45,
 }: {
   className?: string;
   angle?: number;

@@ -25,7 +25,7 @@ export default function Home() {
         <PreLoader />
       ) : (
         <>
-          <div className={`fixed top-0 left-0 h-screen w-screen ${darkMode ? "bg-black" : "bg-white"} z-[-1]`}></div>
+          <div className={`fixed top-0 h-screen left-0 ${darkMode ? "bg-black" : "bg-white"} z-[-1]`}></div>
           <RetroGrid />
           <ThemeSwitcher />
           <TracingBeamDemo />
