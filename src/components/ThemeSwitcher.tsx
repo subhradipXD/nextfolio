@@ -4,6 +4,7 @@ import { useTheme } from "@/context/ThemeContext";
 import HyperText from "./ui/hyper-text";
 
 import { Caesar_Dressing } from 'next/font/google';
+import Link from "next/link";
 
 
 const caesarDressing = Caesar_Dressing({
@@ -18,14 +19,14 @@ function ThemeSwitcher() {
 
   return (
     <>
-      <a href="./SubhradipDasCV.pdf" target="_blank" rel="noopener noreferrer" >
+      <Link href="./SubhradipDasCV.pdf" target="_blank" rel="noopener noreferrer" >
         <div className="inline-block border rounded-lg mt-5 ml-5 px-3 border-black dark:border-white cursor-pointer">
           <HyperText
             className={`${caesarDressing.className} text-xl text-black dark:text-white`}
             text="MY RESUME"
           />
         </div>
-      </a>
+      </Link>
 
       <button
         onClick={toggleTheme}
