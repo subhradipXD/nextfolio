@@ -36,7 +36,6 @@ export function ContactMe() {
             .finally(() => {
                 setIsSubmitting(false);
 
-                // Automatically remove feedback message after 5 seconds
                 setTimeout(() => {
                     setFeedbackMessage("");
                 }, 5000);

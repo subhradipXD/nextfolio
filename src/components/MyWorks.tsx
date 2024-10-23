@@ -18,7 +18,7 @@ export function MyWorks() {
                 className="text-xl text-black dark:text-white"
             />
             <div className="flex flex-wrap justify-center -mt-10">
-                <div className="mx-5 -mb-20 w-full sm:w-[30rem]"> {/* Responsive width for smaller screens */}
+                <div className="mx-5 -mb-20 w-full sm:w-[30rem]">
                     <CardContainer className="inter-var">
                         <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem

@@ -64,7 +64,7 @@ export function Education() {
                 className="text-xl text-black dark:text-white"
             />
             <div className="flex justify-center">
-                <div className="w-full max-w-2xl"> {/* Max width for larger screens */}
+                <div className="w-full max-w-2xl">
                     {educationData.map((item, index) => (
                         <FadeCard
                             key={index}
@@ -76,7 +76,7 @@ export function Education() {
                                 hover:shadow-[0_0_15px_5px_rgba(255,200,0,0.5)] 
                                 dark:hover:shadow-[0_0_15px_5px_rgba(0,255,200,0.5)]
                             `}
-                            direction={index % 2 === 0 ? "left" : "right"} // Alternate directions
+                            direction={index % 2 === 0 ? "left" : "right"}
                             framerProps={{
                                 show: { transition: { delay: index * 0.2 } },
                             }}
