@@ -30,7 +30,7 @@ function ThemeSwitcher() {
         onClick={toggleTheme}
         className="fixed top-5 right-5 p-2 bg-gray-200 dark:bg-gray-700 rounded-full text-xl z-50"
       >
-        {darkMode ? <MdOutlineDarkMode /> : <CiLight />}
+        {darkMode ? <CiLight /> : <MdOutlineDarkMode />}
       </button>
     </>
   );
