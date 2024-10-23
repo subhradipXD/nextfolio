@@ -225,7 +225,7 @@ export function MyWorks() {
             </div>
 
             <div className="flex justify-center mt-10">
-                <Link className={`text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer ${caesarDressing.className}`}
+                <Link className={` z-50 text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer ${caesarDressing.className}`}
                     href="https://github.com/subhradipXD?tab=repositories">
                     see more &rarr;
                 </Link>
