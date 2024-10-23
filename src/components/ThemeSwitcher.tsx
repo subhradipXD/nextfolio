@@ -5,11 +5,10 @@ import HyperText from "./ui/hyper-text";
 
 import { Caesar_Dressing } from 'next/font/google';
 
-// Load the fonts using next/font/google
 const caesarDressing = Caesar_Dressing({
   weight: '400',
-  subsets: ['latin'], // Choose the appropriate subsets if needed
-  display: 'swap',    // This improves performance and reduces layout shifts
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 
