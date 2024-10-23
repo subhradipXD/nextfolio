@@ -2,7 +2,12 @@
 import Link from 'next/link';
 import React from 'react';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaRegEnvelope } from 'react-icons/fa';
-
+import { Caesar_Dressing } from 'next/font/google';
+const caesarDressing = Caesar_Dressing({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
 const Footer: React.FC = () => {
     return (
         <footer className="flex justify-around items-center p-4 bg-transparent">
@@ -22,7 +27,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="text-center text-gray-800 dark:text-gray-200 transition-transform transform hover:scale-110 hover:shadow-3d-light dark:hover:shadow-3d-dark">
-                <p className="text-sm">
+                <p className={`text-sm ${caesarDressing.className}`}>
                     made with <span className="text-red-700">&hearts;</span> thank you!
                 </p>
             </div>

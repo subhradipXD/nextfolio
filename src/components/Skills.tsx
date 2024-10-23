@@ -129,12 +129,19 @@ const skills3 = [
             fire,
     },
 ];
+
+import { Caesar_Dressing } from 'next/font/google';
+const caesarDressing = Caesar_Dressing({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
 export function Skills() {
     return (
         <>
             <BlurIn
                 word="Skills"
-                className="text-xl font-bold text-black dark:text-white"
+                className={`text-xl text-black dark:text-white text-center ${caesarDressing.className}`}
             />
             <div className="w-full p-10 lg:mr-20">
                 <div className="flex flex-row items-center justify-center mb-5 w-full">

@@ -10,27 +10,40 @@ import termilio from "@/public/projects/TERMILIO.png";
 import tictactoe from "@/public/projects/TICTACTOE.jpg";
 import weather from "@/public/projects/WEATHER.jpg";
 
+import { Fondamento, Caesar_Dressing } from 'next/font/google';
+const caesarDressing = Caesar_Dressing({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
+const fondamento = Fondamento({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
 export function MyWorks() {
     return (
         <>
             <BlurIn
                 word="Projects"
-                className="text-xl text-black dark:text-white"
+                className={`text-xl text-black dark:text-white text-center ${caesarDressing.className}`}
             />
-            <div className="flex flex-wrap justify-center -mt-10">
+            <div className={`flex flex-wrap justify-center -mt-10 ${fondamento.className}`}>
                 <div className="mx-5 -mb-20 w-full sm:w-[30rem]">
                     <CardContainer className="inter-var">
                         <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
-                                className="text-xl font-bold text-neutral-600 dark:text-white"
+                                className="text-xl font-bold text-neutral-900 dark:text-white"
                             >
                                 NUXBUY
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                                className="text-neutral-700 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
                                 An online shopping website make using React.js, TailwindCSS, Firebase, Razorpay, fake-store api.
                             </CardItem>
@@ -71,14 +84,14 @@ export function MyWorks() {
                         <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
-                                className="text-xl font-bold text-neutral-600 dark:text-white"
+                                className="text-xl font-bold text-neutral-900 dark:text-white"
                             >
                                 TERMILIO
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                                className="text-neutral-700 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
                                 My terminal portfolio make using React.js, TailwindCSS.
                             </CardItem>
@@ -119,14 +132,14 @@ export function MyWorks() {
                         <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
-                                className="text-xl font-bold text-neutral-600 dark:text-white"
+                                className="text-xl font-bold text-neutral-900 dark:text-white"
                             >
                                 Tic-Tac-Toe
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                                className="text-neutral-700 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
                                 Tic-Tac-Toe game make using React.js.
                             </CardItem>
@@ -167,14 +180,14 @@ export function MyWorks() {
                         <CardBody className="bg-transparent relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-transparent dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
                             <CardItem
                                 translateZ="50"
-                                className="text-xl font-bold text-neutral-600 dark:text-white"
+                                className="text-xl font-bold text-neutral-900 dark:text-white"
                             >
                                 WEATHER-APP
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                                className="text-neutral-700 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
                                 Weather-App make using React.js, Bootstrap, Open-Weather api.
                             </CardItem>
@@ -212,7 +225,8 @@ export function MyWorks() {
             </div>
 
             <div className="flex justify-center mt-10">
-                <Link className="text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer" href="https://github.com/subhradipXD?tab=repositories">
+                <Link className={`text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer ${caesarDressing.className}`}
+                    href="https://github.com/subhradipXD?tab=repositories">
                     see more &rarr;
                 </Link>
             </div>

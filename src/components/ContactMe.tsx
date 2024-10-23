@@ -16,6 +16,19 @@ type FormData = {
     message: string;
 };
 
+import { Fondamento, Caesar_Dressing } from 'next/font/google';
+const caesarDressing = Caesar_Dressing({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
+const fondamento = Fondamento({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
 export function ContactMe() {
     const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,9 +57,9 @@ export function ContactMe() {
 
     return (
         <>
-            <BlurIn word="Contact" className="text-xl text-black dark:text-white" />
+            <BlurIn word="Contact" className={`text-xl text-black dark:text-white text-center ${caesarDressing.className}`} />
             <div className="max-w-md w-9/12 md:w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border bg-white bg-opacity-5 dark:bg-black dark:bg-opacity-5 backdrop-blur-md border-white dark:border-zinc-800 border-opacity-30">
-                <form className="my-5" onSubmit={handleSubmit(onSubmit)}>
+                <form className={`my-5 ${fondamento.className}`} onSubmit={handleSubmit(onSubmit)}>
                     <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-4">
                         <LabelInputContainer>
                             <Label htmlFor="firstname">First name</Label>
@@ -91,7 +104,7 @@ export function ContactMe() {
                     </LabelInputContainer>
                     <button
                         type="submit"
-                        className="w-full"
+                        className={`w-full ${caesarDressing.className}`}
                         disabled={isSubmitting}
                     >
                         <CoverDemo />

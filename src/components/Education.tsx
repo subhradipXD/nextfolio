@@ -56,14 +56,27 @@ const educationData = [
     },
 ];
 
+import { Fondamento, Caesar_Dressing } from 'next/font/google';
+const caesarDressing = Caesar_Dressing({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
+const fondamento = Fondamento({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
 export function Education() {
     return (
         <div className="flex flex-col space-y-8 text-center px-4 md:px-0">
             <BlurIn
                 word="Education"
-                className="text-xl text-black dark:text-white"
+                className={`text-xl text-black dark:text-white text-center ${caesarDressing.className}`}
             />
-            <div className="flex justify-center">
+            <div className={`flex justify-center ${fondamento.className}`}>
                 <div className="w-full max-w-2xl">
                     {educationData.map((item, index) => (
                         <FadeCard

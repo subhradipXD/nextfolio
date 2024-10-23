@@ -1,9 +1,16 @@
 import { IconCloudDemo } from "./IconCloudDemo";
 import BoxReveal from "./ui/box-reveal";
+import { Fondamento } from 'next/font/google';
+
+const fondamento = Fondamento({
+    weight: '400',
+    subsets: ['latin'],
+    display: 'swap',
+});
 
 function MainHome() {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-center">
+        <div className={`flex flex-col lg:flex-row items-center justify-center ${fondamento.className}`}>
             <div className="w-full lg:w-1/2 p-5 md:p-10 lg:ml-20 lg:mr-5 flex flex-col justify-center">
                 <div className="max-w-lg mx-auto">
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
