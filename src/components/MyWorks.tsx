@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import img from "@/public/1708594263137.jpg"; // Replace with actual image imports
 import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import BlurIn from "./ui/blur-in";
+import nuxbuy from "@/public/projects/NUXBUY.jpg";
+import termilio from "@/public/projects/TERMILIO.png";
+import tictactoe from "@/public/projects/TICTACTOE.jpg";
+import weather from "@/public/projects/WEATHER.jpg";
 
 export function MyWorks() {
     return (
@@ -22,40 +25,41 @@ export function MyWorks() {
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
                             >
-                                Make things float in air
+                                NUXBUY
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                Hover over this card to unleash the power of CSS perspective
+                                An online shopping website make using React.js, TailwindCSS, Firebase, Razorpay, fake-store api.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src={img}
+                                    src={nuxbuy}
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                                     alt="thumbnail"
                                 />
                             </CardItem>
-                            <div className="flex justify-between items-center mt-20">
-                                <CardItem
+                            <div className="flex justify-end items-center mt-20">
+                                {/* <CardItem
                                     translateZ={20}
                                     as={Link}
                                     href="https://twitter.com/mannupaaji"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
-                                </CardItem>
+                                    Go live &rarr;
+                                </CardItem> */}
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                                    href="https://github.com/subhradipXD/NUXBUY"
                                 >
-                                    Sign up
+                                    View Code &rarr;
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -69,18 +73,18 @@ export function MyWorks() {
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
                             >
-                                Make things float in air
+                                TERMILIO
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                Hover over this card to unleash the power of CSS perspective
+                                My terminal portfolio make using React.js, TailwindCSS.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src={img}
+                                    src={termilio}
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -91,18 +95,19 @@ export function MyWorks() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://my-termilio.vercel.app/"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Go live &rarr;
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                                    href="https://github.com/subhradipXD/my-termilio"
                                 >
-                                    Sign up
+                                    View Code &rarr;
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -116,18 +121,18 @@ export function MyWorks() {
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
                             >
-                                Make things float in air
+                                Tic-Tac-Toe
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                Hover over this card to unleash the power of CSS perspective
+                                Tic-Tac-Toe game make using React.js.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src={img}
+                                    src={tictactoe}
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -138,18 +143,19 @@ export function MyWorks() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://tic-tac-toe-fid4.vercel.app/"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Go live &rarr;
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                                    href="https://github.com/subhradipXD/tic-tac-toe"
                                 >
-                                    Sign up
+                                    View Code &rarr;
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -163,18 +169,18 @@ export function MyWorks() {
                                 translateZ="50"
                                 className="text-xl font-bold text-neutral-600 dark:text-white"
                             >
-                                Make things float in air
+                                WEATHER-APP
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
                                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                             >
-                                Hover over this card to unleash the power of CSS perspective
+                                Weather-App make using React.js, Bootstrap, Open-Weather api.
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src={img}
+                                    src={weather}
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -185,18 +191,19 @@ export function MyWorks() {
                                 <CardItem
                                     translateZ={20}
                                     as={Link}
-                                    href="https://twitter.com/mannupaaji"
+                                    href="https://github.com/subhradipXD/weather-app"
                                     target="__blank"
                                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                                 >
-                                    Try now →
+                                    Go live &rarr;
                                 </CardItem>
                                 <CardItem
                                     translateZ={20}
-                                    as="button"
+                                    as={Link}
                                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                                    href="https://weather-app-azure-eta.vercel.app/"
                                 >
-                                    Sign up
+                                    View Code &rarr;
                                 </CardItem>
                             </div>
                         </CardBody>
@@ -204,8 +211,8 @@ export function MyWorks() {
                 </div>
             </div>
 
-            <div className="flex justify-center">
-                <Link className="text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer" href={""}>
+            <div className="flex justify-center mt-10">
+                <Link className="text-lg font-semibold text-gray-700 hover:text-blue-500 hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer" href="https://github.com/subhradipXD?tab=repositories">
                     see more &rarr;
                 </Link>
             </div>

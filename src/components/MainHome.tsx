@@ -7,7 +7,9 @@ function MainHome() {
             <div className="w-full lg:w-1/2 p-5 md:p-10 lg:ml-20 lg:mr-5 flex flex-col justify-center">
                 <div className="max-w-lg mx-auto">
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                        <p className="text-[2rem] md:text-[3rem] font-semibold">Welcome to My</p>
+                        <p className="text-[2rem] md:text-[3rem] font-semibold">
+                            Welcome to My
+                        </p>
                     </BoxReveal>
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                         <p className="text-[2rem] md:text-[3rem] font-semibold">
@@ -16,9 +18,9 @@ function MainHome() {
                     </BoxReveal>
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                         <h2 className="mt-2 text-[0.875rem] md:text-[1rem]">
-                            Congratulations! You’ve found your way to my{" "}
-                            <span className="text-[#5046e6]">World</span>, the place where I
-                            pretend to know what I’m doing.
+                            <span className="text-[#5046e6]">Congratulations!</span> You’ve
+                            found your way to my <span className="text-[#5046e6]">World</span>
+                            , the place where I pretend to know what I’m doing.
                         </h2>
                     </BoxReveal>
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
@@ -30,11 +32,11 @@ function MainHome() {
                     </BoxReveal>
                     <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                         <h2 className="mt-2 text-[0.875rem] md:text-[1rem]">
-                            Don’t worry; I won’t judge you for being here—after all, I’m the one
-                            who put this together! Dive in and witness my{" "}
+                            Don’t worry; I won’t judge you for being here—after all, I’m the
+                            one who put this together! Dive in and witness my{" "}
                             <span className="text-[#5046e6]">journey</span> from
-                            <span className="text-[#5046e6]"> clueless</span> to… well, slightly
-                            less clueless. 😅
+                            <span className="text-[#5046e6]"> clueless</span> to… well,
+                            slightly less clueless. 😅
                         </h2>
                     </BoxReveal>
                 </div>
