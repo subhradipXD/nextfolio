@@ -5,7 +5,7 @@ import { WobbleCard } from "./ui/wobble-card";
 
 export function WobbleCardDemo() {
     return (
-        <WobbleCard containerClassName="min-h-[200px]">
+        <WobbleCard>
             <Image
                 src="/Me.jpg" // Corrected src path
                 alt="Profile Image"
