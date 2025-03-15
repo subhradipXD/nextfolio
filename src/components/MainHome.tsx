@@ -1,6 +1,7 @@
-import { IconCloudDemo } from "./IconCloudDemo";
+// import { IconCloudDemo } from "./IconCloudDemo";
 import BoxReveal from "./ui/box-reveal";
 import { Fondamento } from 'next/font/google';
+import { WobbleCardDemo } from "./WobbleCardDemo";
 
 const fondamento = Fondamento({
     weight: '400',
@@ -50,7 +51,8 @@ function MainHome() {
             </div>
             <div className="w-full lg:w-1/2 p-5 md:p-10 flex justify-center items-center lg:ml-5 lg:mr-20">
                 <div className="w-full max-w-md">
-                    <IconCloudDemo />
+                    {/* <IconCloudDemo /> */}
+                    <WobbleCardDemo />
                 </div>
             </div>
         </div>

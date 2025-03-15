@@ -19,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        neon: "0 0 60px rgba(255, 0, 255, 1)", // Pink glow
+        "neon-dark": "0 0 60px rgba(0, 255, 255, 1)", // Cyan glow
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
